@@ -49,9 +49,6 @@ def testleapyear(year, month, day):
 
 def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
-    daysOfMonths_nonleap = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    daysOfMonths_leap = [ 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
     if abs(year2-year1) == 0:
         total1 = testleapyear(year1, month1, day1)
         total2 = testleapyear(year2, month2, day2)
